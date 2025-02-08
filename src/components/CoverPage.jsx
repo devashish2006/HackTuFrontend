@@ -1,5 +1,6 @@
 import React from "react";
 import { Cover } from "./ui/cover";
+import { motion } from "framer-motion";
 
 export function CoverDemo() {
   const handleRedirect = () => {
@@ -7,16 +8,17 @@ export function CoverDemo() {
   };
 
   return (
-    <div>
-      <h1 className="text-4xl md:text-4xl lg:text-6xl font-semibold max-w-7xl mx-auto text-center mt-6 relative z-20 py-6 bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-neutral-700 to-neutral-700 dark:from-neutral-800 dark:via-white dark:to-white">
+    <div className="relative flex items-center justify-center min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-800">
+      <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold max-w-7xl mx-auto text-center px-4 sm:px-8 py-6 bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 via-purple-500 to-pink-500 animate-text">
         Start Your Learning with <br />
-        at{" "}
-        <button
+        <motion.button
           onClick={handleRedirect}
-          className="px-4 py-2 text-white border border-white hover:bg-white hover:text-black transition duration-300 rounded-lg shadow-md"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}
+          className="mt-6 px-6 py-3 text-lg font-semibold text-black bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-500 rounded-full shadow-lg shadow-purple-500/40 hover:shadow-xl hover:shadow-pink-500/50 transition-all duration-300"
         >
           <Cover>AICademy</Cover>
-        </button>
+        </motion.button>
       </h1>
     </div>
   );
