@@ -4,7 +4,7 @@ import { GlowingEffect } from "./ui/glowing-effect";
 
 function GlowingEffectDemo() {
   return (
-    <ul className="grid grid-cols-1 gap-6 md:grid-cols-12 md:grid-rows-3 lg:gap-8 xl:max-h-[34rem] xl:grid-rows-2">
+    <ul className=" py-3 grid grid-cols-1 gap-6 md:grid-cols-12 md:grid-rows-3 lg:gap-8 xl:max-h-[34rem] xl:grid-rows-2">
       <GridItem
         area="md:[grid-area:1/1/2/7] xl:[grid-area:1/1/2/5]"
         icon={<Box className="h-6 w-6 text-cyan-500" />}

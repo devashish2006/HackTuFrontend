@@ -3,15 +3,19 @@ import GlowingEffectDemo from '../components/glowingEffectPage'
 import { CoverDemo } from '../components/CoverPage'
 import { FlipWordsDemo } from '../components/FlipWordsPage'
 import { BackgroundBeamsWithCollisionDemo } from '../components/BackgroundBeamsPage'
+import Footer from '../components/Footer'
+import { CompareDemo } from '../components/ComparePage'
 
 
 function Home() {
     return (
         <>
-        <BackgroundBeamsWithCollisionDemo />
         <FlipWordsDemo />
+        {/* <BackgroundBeamsWithCollisionDemo /> */}
         <GlowingEffectDemo />
-        <CoverDemo />
+        {/* <CoverDemo /> */}
+        <CompareDemo />
+        <Footer />
         </>
     )
 }

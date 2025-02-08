@@ -13,9 +13,9 @@ export function CoverDemo() {
         Start Your Learning with <br />
         <motion.button
           onClick={handleRedirect}
-          whileHover={{ scale: 1.1 }}
+          whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className="mt-6 px-6 py-3 text-lg font-semibold text-black bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-500 rounded-full shadow-lg shadow-purple-500/40 hover:shadow-xl hover:shadow-pink-500/50 transition-all duration-300"
+          className="mt-6 px-6 py-2 text-sm md:text-base font-semibold text-white bg-gradient-to-r transition-transform duration-300"
         >
           <Cover>AICademy</Cover>
         </motion.button>
